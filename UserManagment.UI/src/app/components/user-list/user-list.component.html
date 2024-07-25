@@ -1,0 +1,21 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th (click)="sortBy('name')">Name</th>
+        <th (click)="sortBy('age')">Age</th>
+        <th (click)="sortBy('phone')">Phone</th>
+        <th (click)="sortBy('status')">Status</th>
+        <th (click)="sortBy('designation')">Designation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.age }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.status }}</td>
+        <td>{{ user.designation }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
